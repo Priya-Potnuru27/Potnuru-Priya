@@ -1,0 +1,6 @@
+t=int(input())
+
+# run a for loop for each test case
+for i in range(t):
+    n=int(input())
+    print(-n)
