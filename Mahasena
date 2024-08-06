@@ -1,0 +1,13 @@
+n=int(input())
+x=0
+y=0
+weapon=list(map(int,input().split()))
+for weapon in weapon:
+    if weapon%2==0:
+        x+=1
+    else:
+        y+=1
+if x>y:
+    print("ready for battle")
+else:
+    print("not ready ")
