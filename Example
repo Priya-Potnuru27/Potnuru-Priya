@@ -1,0 +1,5 @@
+x=int(input())
+if x%2==0>=2:
+    print(x)
+else:
+    print(x+x//2)
