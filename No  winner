@@ -1,0 +1,7 @@
+for i in range(int(input())):
+    
+    a,b,c,m=map(int,input().split())
+    if m>=abs(a-b) or m>=abs(b-c) or m>=abs(c-a):
+        print("yes")
+    else:
+        print("no
