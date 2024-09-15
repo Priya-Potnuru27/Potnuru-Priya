@@ -1,0 +1,19 @@
+stones="aabcd"
+jewels="ab"
+ans=0
+for i in range(len(stones)):
+    for j in range(len(jewels)):
+        if stones[i] == jewels[j]:
+           ans += 1 
+print(ans)
+
+#another way i.e without range function
+
+stones="abcde"
+jewels="ab"
+ans=0
+for i in stones:
+    for j in jewels:
+        if i==j:
+            ans += 1
+print(ans)
