@@ -1,0 +1,11 @@
+sentence=["alice and bob love leetcode", "i think so too", "this is greatest thanks very much"]
+ans=0
+for j in range(len(sentence)):
+    s=sentence[j]
+    temp=1
+    for i in range(len(s)):
+        ch=s[i]
+        if ch==" ":
+            temp+=1
+    ans=max(ans,temp)
+print(ans)
