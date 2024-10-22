@@ -1,0 +1,15 @@
+from array import*
+arr=array('i',[])
+n=int(input("lngth"))
+for i in range(n):
+    x=int(input("elements"))
+    arr.append(x)
+print(arr)
+val=int(input("values"))
+k=0
+for e in arr:
+    if e==val:
+        print(k)
+        break
+    k+=1
+    
