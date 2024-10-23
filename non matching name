@@ -1,0 +1,7 @@
+t=int(input())
+for _ in range(t):
+    input()
+    sa=set(input())
+    sb=set(input())
+    print("yes" if 26-len(sa|sb)>0 else 'no')
+    
