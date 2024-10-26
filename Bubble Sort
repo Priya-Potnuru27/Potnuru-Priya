@@ -1,0 +1,12 @@
+li=[2,6,4,1,3,4]
+n=len(li)
+for i in range(n-1):
+  didswapped=False
+  for j in range(n-i-1):
+    if li[j]>li[j+1]:
+      li[j],li[j+1]=li[j+1],li[j]
+      didswapped=True
+  #print(li)
+  if didswapped==False:
+    break
+print(li)
