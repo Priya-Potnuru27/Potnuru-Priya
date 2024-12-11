@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(t):
+    n,k,p=map(int,input().split())
+    chairs=sorted(map(int,input().split()))
+    vedh=k+chairs[-1]
+    varh=p+sum(chairs[:-1])
+    if vedh>varh:
+        print("ved")
+    elif varh>vedh:
+        print("varun")
+    else:
+        print("equal")
