@@ -1,0 +1,16 @@
+s = "pwwkew"
+uni=set()
+l=0
+ans=0
+n=len(s)
+for r in range(n):
+    ch=s[r]
+    if ch not in uni:
+       uni.add(ch)
+    else:
+        while ch in uni:
+            uni.remove(s[l])
+            l+=1
+        uni.add(ch)
+    ans=max(ans,r-l+1)
+print(ans)
