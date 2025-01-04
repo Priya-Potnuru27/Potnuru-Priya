@@ -1,0 +1,13 @@
+def fun(dicia,dicib):
+  if len(dicia)!=len(dicib):
+    return False
+  for i in dicia:
+    if i not in dicib:
+      return False
+    if dicia[i]!=dicib[i]:
+      return False
+  return True
+dicia={1:3,2:7}
+dicib={1:4,2:7}
+ans=fun(dicia,dicib)
+print(ans)
