@@ -1,0 +1,31 @@
+class Account:
+  def __init__(self):
+    self.balance=0
+    
+  def deposit(self,amount):
+    if amount<0:
+      return
+    self.balance+=amount
+    
+  def withdraw(self,amount):
+    if amount<0 or amount>self.balance:
+      return
+    self.balance-=amount
+    
+  def getBalance(self):
+    return self.balance
+    
+class Customer:
+  def setName(self,name):
+    self.name=name
+  def getName(self):
+    return self.name
+
+from demo import Account,Customer
+x=Account()
+x.deposit(5000)
+x.withdraw(-3000)
+x.deposit(800)
+x.withdraw(10000)
+x.deposit(2000)
+print(x.balance())
