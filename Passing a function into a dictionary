@@ -1,0 +1,4 @@
+def fun(a):
+  print(a)
+dici={1:2,3:4}
+fun(dici)
