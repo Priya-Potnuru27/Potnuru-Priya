@@ -1,0 +1,26 @@
+def fun(dicia,dicib):
+  if len(dicia)!=len(dicib):
+    return False
+  for i in dicia:
+    if i not in dicib:
+      return False
+    if dicia[i]!=dicib[i]:
+      return False
+  return True
+dicia={}
+dicib={}
+s1="abcab"
+s2="aabbc"
+for i in s1:
+  if i in dicia:
+    dicia[i]+=1
+  else:
+    dicia[i]=1
+for i in s2:
+  if i in dicib:
+    dicib[i]+=1
+  else:
+    dicib[i]=1
+    
+ans=fun(dicia,dicib)
+print(ans)
