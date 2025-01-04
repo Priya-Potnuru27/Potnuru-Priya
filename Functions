@@ -1,0 +1,26 @@
+class Sequence:
+  def __init__(self,start,stop,step):
+    self.start=start
+    self.stop=stop
+    self.step=step
+    self.value=start
+  def next(self):
+    if self.value>self.stop:
+      return
+    result=self.value
+    self.value+=self.step
+    return result
+  def reset(self):
+    self.value=self.start
+
+from demo import Sequence
+s=Sequence(1,10,3)
+print(s.next())
+print(s.next())
+print(s.next())
+print(s.next())
+print(s.next())
+print(s.next())
+s.reset()
+print(s.next())
+print(s.next())
