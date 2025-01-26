@@ -1,0 +1,18 @@
+# Update the '_' in the code below to solve the problem
+
+t = int(input())
+for i in range(t):
+    n = int(input())
+    
+    #declare an empty list to hold all divisors
+    divisors = []               
+    i = _
+    while i <= n:
+        #check if n is divisible by each i
+        if ___ == 0:            
+            #append each i to the list which meets this condition
+            divisors.______(i)  
+        i = i + 1
+    
+    print(*divisors)
+    
