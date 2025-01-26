@@ -1,0 +1,15 @@
+# Update the '_' in the code below to solve the problem
+
+t = int(input())
+for i in range(t):
+    #declare N as a string instead of an integer
+    N = ___(input())        
+    
+    #list to hold all digits of the number
+    final_ans = __          
+    
+    #useful string syntax
+    for i in N:             
+        final_ans.append(_)
+        
+    print(_final_ans)
